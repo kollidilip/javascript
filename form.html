@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Form page</title>
+    </head>
+    <body style="margin: 10% 40% ; background-color: aqua;">
+        <div style="align-items: center;">
+            <script type="text/javascript" src="form_validation.js" ></script>
+            <form onsubmit="return validateForm()" action="default.html" style=" background-image: linear-gradient(180deg, rgb(167, 231, 16), rgb(120, 148, 238)); text-align : center;; width: 100%; background-color: rgb(228, 241, 247);">
+                <br style="margin-top: 10%;">
+                <input id="username" type="text" placeholder="Username">
+                <br>
+                <label id="ulabel" for="username" style="color: crimson; visibility: hidden; font-size: smaller;">* fill the username</label>
+                <br>
+                <input id="password" type="password" placeholder="password" >
+                <br>
+                <label id="plabel" for="password" style="color: rgb(220, 20, 47); visibility: hidden; font-size: smaller;">* enter the password</label>
+                <br>
+                <input id="mnumber" type="number" placeholder="mobile number" >
+                <br>
+                <label id="mbllabel" for="mnumber" style="color: rgb(220, 20, 47); visibility: hidden; font-size: smaller;">* enter the mobile number</label>
+                <br>
+                <input id="email" type="email" placeholder="email id" >
+                <br>
+                <label id="emaillabel" for="email" style="color: rgb(220, 20, 47); visibility: hidden; font-size: smaller;">* enter the email</label>
+                <br>
+                <button id="btn" style="align-items: center; color: brown; background-color: chartreuse;">
+                    Validate
+                </button>
+            </form>
+        </div>
+    </body>
+</html>
